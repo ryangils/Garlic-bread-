@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The best garlic bread on the planet — baked fresh, delivered hot." />
+  <title>Garlic Bread Co. 🥖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header>
+    <div class="logo">🥖 <span>Garlic Bread</span> Co.</div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#features">Why Us</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <button id="cart-btn" aria-label="Open cart">
+      🛒
+      <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <h1>Life is better with<br><span>Garlic Bread</span></h1>
+    <p>Baked fresh every morning with real butter, hand-crushed garlic, and a whole lot of love.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn btn-primary">Shop Now</a>
+      <a href="#features" class="btn btn-outline">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ===== Products ===== -->
+  <section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+    <p class="section-sub">Six irresistible varieties — choose your favourite (or get them all)</p>
+    <div class="products-grid" id="products-grid"></div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section id="features">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="icon">🌾</div>
+        <h4>Artisan Ingredients</h4>
+        <p>Stone-milled flour, cultured butter, and fresh-grown garlic every batch.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🔥</div>
+        <h4>Baked to Order</h4>
+        <p>We bake when you order so every loaf arrives golden and crisp.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🚀</div>
+        <h4>Fast Delivery</h4>
+        <p>Hot bread at your door in under 45 minutes or your next order is free.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">💚</div>
+        <h4>Sustainability</h4>
+        <p>All packaging is 100% compostable and we offset every delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section id="reviews">
+    <h2 class="section-title">What People Are Saying</h2>
+    <p class="section-sub">Thousands of garlic bread lovers can't be wrong</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"The Cheesy Pull-Apart completely changed my life. I order it every Friday and I have zero regrets."</p>
+        <div class="reviewer">— Sarah M.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Best garlic bread I've ever had, and I've had a LOT of garlic bread. The focaccia is unreal."</p>
+        <div class="reviewer">— Jake T.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Arrived piping hot in 30 minutes. The whole house smelled amazing. Will definitely reorder."</p>
+        <div class="reviewer">— Priya K.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2026 Garlic Bread Co. — Made with 🧄 and ❤️ &nbsp;|&nbsp; <a href="#">Privacy</a> &nbsp;|&nbsp; <a href="#">Terms</a></p>
+  </footer>
+
+  <!-- ===== Cart Drawer ===== -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-header">
+      <span>Your Cart 🛒</span>
+      <button id="close-cart" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total-amount">$0.00</span>
+      </div>
+      <button class="btn btn-dark" id="checkout-btn">Checkout →</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
